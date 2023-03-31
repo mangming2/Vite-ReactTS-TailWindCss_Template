@@ -20,24 +20,24 @@ function NavBar() {
         </button>
       </div>
       <div className={`flex md:flex  ${mobileMenuOpen ? "block" : "hidden"}`}>
-        <div className="flex flex-col md:flex-row max-md:fixed max-md:bg-white max-md:top-20 max-md:right-5 justify-between ">
+        <div className="flex flex-col md:flex-row max-md:fixed max-md:w-20 max-md:bg-gray-800 max-md:top-16 max-md:right-0  max-md:items-center max-md:justify-center ">
           <Link
             to="/"
-            className="flex mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-white mr-4"
+            className="flex  md:inline-block md:mt-0 text-gray-200 hover:text-white m-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             Home
           </Link>
           <Link
             to="/about"
-            className="flex mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-white mr-4"
+            className="flex  md:inline-block md:mt-0 text-gray-200 hover:text-white m-2 "
             onClick={() => setMobileMenuOpen(false)}
           >
             About
           </Link>
           <Link
             to="/contact"
-            className="flex mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-white mr-4"
+            className="flex  md:inline-block md:mt-0 text-gray-200 hover:text-white m-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             Contact
