@@ -5,7 +5,7 @@ function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <header className="flex  items-center">
-      <div className="block md:hidden fixed top-5 right-5 ">
+      <div className="block md:hidden mr-5 ">
         <button
           className="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
