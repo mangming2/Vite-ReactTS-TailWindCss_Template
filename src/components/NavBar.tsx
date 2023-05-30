@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function NavBar() {
+function NavBar({ handleClickNavLink }: { handleClickNavLink: any }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <header className="flex  items-center">
@@ -20,28 +20,32 @@ function NavBar() {
         </button>
       </div>
       <div className={`flex md:flex  ${mobileMenuOpen ? "block" : "hidden"}`}>
-        <div className="flex flex-col md:flex-row max-md:fixed max-md:w-20 max-md:bg-gray-800 max-md:top-16 max-md:right-0  max-md:items-center max-md:justify-center ">
-          <Link
-            to="/"
+        <div className="flex flex-col md:flex-row max-md:absolute max-md:w-20 max-md:bg-gray-800 max-md:top-16 max-md:right-0  max-md:items-center max-md:justify-center ">
+          <div
+            onClick={() => {
+              handleClickNavLink(0);
+              setMobileMenuOpen(false);
+            }}
             className="flex  md:inline-block md:mt-0 text-gray-200 hover:text-white m-2"
-            onClick={() => setMobileMenuOpen(false)}
+            // onClick={() => setMobileMenuOpen(false)}
           >
             Home
-          </Link>
-          <Link
-            to="/about"
+          </div>
+          <div
             className="flex  md:inline-block md:mt-0 text-gray-200 hover:text-white m-2 "
-            onClick={() => setMobileMenuOpen(false)}
+            //onClick={() => setMobileMenuOpen(false)}
           >
             About
-          </Link>
-          <Link
-            to="/contact"
+          </div>
+          <div
+            onClick={() => {
+              handleClickNavLink(2);
+              setMobileMenuOpen(false);
+            }}
             className="flex  md:inline-block md:mt-0 text-gray-200 hover:text-white m-2"
-            onClick={() => setMobileMenuOpen(false)}
           >
             Contact
-          </Link>
+          </div>
         </div>
       </div>
     </header>

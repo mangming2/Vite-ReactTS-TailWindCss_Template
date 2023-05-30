@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "./NavBar";
 
-function Header() {
+function Header({ handleClickNavLink }: { handleClickNavLink: any }) {
   return (
     <div className="bg-gray-800 flex items-center">
       <img
@@ -10,7 +10,7 @@ function Header() {
         alt="logo"
       />
       <div className="m-auto">This is Template</div>
-      <NavBar />
+      <NavBar handleClickNavLink={handleClickNavLink} />
     </div>
   );
 }
