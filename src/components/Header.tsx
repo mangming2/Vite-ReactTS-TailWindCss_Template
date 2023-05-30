@@ -3,7 +3,7 @@ import NavBar from "./NavBar";
 
 function Header({ handleClickNavLink }: { handleClickNavLink: any }) {
   return (
-    <div className="bg-gray-800 flex items-center">
+    <div className="bg-none flex items-center">
       <img
         src="https://i.imgur.com/1Q1Z1Zy.png"
         className="w-16 h-16"

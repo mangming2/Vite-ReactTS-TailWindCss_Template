@@ -20,7 +20,7 @@ function NavBar({ handleClickNavLink }: { handleClickNavLink: any }) {
         </button>
       </div>
       <div className={`flex md:flex  ${mobileMenuOpen ? "block" : "hidden"}`}>
-        <div className="flex flex-col md:flex-row max-md:absolute max-md:w-20 max-md:bg-gray-800 max-md:top-16 max-md:right-0  max-md:items-center max-md:justify-center ">
+        <div className="flex flex-col md:flex-row max-md:absolute max-md:w-20 max-md:bg-none max-md:top-16 max-md:right-0  max-md:items-center max-md:justify-center ">
           <div
             onClick={() => {
               handleClickNavLink(0);
