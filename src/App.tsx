@@ -26,12 +26,15 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Header handleClickNavLink={handleClickNavLink} />
-      <Routes>
-        <Route path="/" element={<Home sectionRefs={sectionRefs} />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <div className="min-h-screen">
+        <Header handleClickNavLink={handleClickNavLink} />
+
+        <Routes>
+          <Route path="/" element={<Home sectionRefs={sectionRefs} />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
       <Footer />
     </BrowserRouter>
   );

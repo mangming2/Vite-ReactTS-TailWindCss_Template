@@ -33,7 +33,10 @@ function NavBar({ handleClickNavLink }: { handleClickNavLink: any }) {
           </div>
           <div
             className="flex  md:inline-block md:mt-0 text-gray-200 hover:text-white m-2 "
-            //onClick={() => setMobileMenuOpen(false)}
+            onClick={() => {
+              handleClickNavLink(1);
+              setMobileMenuOpen(false);
+            }}
           >
             About
           </div>
