@@ -29,7 +29,7 @@ function NavBar({ handleClickNavLink }: { handleClickNavLink: any }) {
             className="flex  md:inline-block md:mt-0 text-gray-200 hover:text-white m-2"
             // onClick={() => setMobileMenuOpen(false)}
           >
-            Home
+            Welcome
           </div>
           <div
             className="flex  md:inline-block md:mt-0 text-gray-200 hover:text-white m-2 "
@@ -38,7 +38,7 @@ function NavBar({ handleClickNavLink }: { handleClickNavLink: any }) {
               setMobileMenuOpen(false);
             }}
           >
-            About
+            Story
           </div>
           <div
             onClick={() => {
@@ -47,7 +47,25 @@ function NavBar({ handleClickNavLink }: { handleClickNavLink: any }) {
             }}
             className="flex  md:inline-block md:mt-0 text-gray-200 hover:text-white m-2"
           >
-            Contact
+            RoadMap
+          </div>
+          <div
+            onClick={() => {
+              handleClickNavLink(3);
+              setMobileMenuOpen(false);
+            }}
+            className="flex  md:inline-block md:mt-0 text-gray-200 hover:text-white m-2"
+          >
+            Team
+          </div>
+          <div
+            onClick={() => {
+              handleClickNavLink(4);
+              setMobileMenuOpen(false);
+            }}
+            className="flex  md:inline-block md:mt-0 text-gray-200 hover:text-white m-2"
+          >
+            About Us
           </div>
         </div>
       </div>

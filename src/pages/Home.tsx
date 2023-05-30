@@ -201,7 +201,7 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
         </div>
       </div>
 
-      <div className="bg-gray-50">
+      <div ref={sectionRefs[3]} className="bg-gray-50">
         <div className="max-w-screen-lg mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
@@ -233,12 +233,8 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
         </div>
       </div>
 
-      <div>
+      <div ref={sectionRefs[4]}>
         <About />
-      </div>
-
-      <div>
-        <Contact />
       </div>
     </main>
   );
