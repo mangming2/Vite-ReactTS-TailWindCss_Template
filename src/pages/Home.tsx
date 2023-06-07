@@ -152,7 +152,7 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
             </div>
 
             <div className="mt-10">
-              <div className="text-black">
+              <div className="flex justify-center text-black">
                 <h1>Phase 1</h1>
                 <h1>Phase 1 Description</h1>
                 <div>
@@ -163,10 +163,10 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
                   Description
                 </div>
               </div>
-              <div className="text-black">
+              <div className=" text-center text-black">
                 <h1>Phase 1</h1>
                 <h1>Phase 1 Description</h1>
-                <div>
+                <div className="text-center">
                   Phase 1 DescriptionPhase 1 DescriptionPhase 1 DescriptionPhase
                   1 DescriptionPhase 1 DescriptionPhase 1 DescriptionPhase 1
                   DescriptionPhase 1 DescriptionPhase 1 DescriptionPhase 1
